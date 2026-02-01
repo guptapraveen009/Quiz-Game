@@ -64,7 +64,9 @@ const quizQuestions = [
     ],
   },
 ];  // This a array of objects which contain questions and answers of the quiz 
-
+const generalScience = [
+  
+];
 
 // Quiz Code 
 let currentQuestionIndex = 0 // When We Start The Question It Will Start With First Question Only.

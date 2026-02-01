@@ -11,12 +11,29 @@
 <body>
     <div class="container">
         <!-- Start Screen -->
-        <div class="screen active" id="start-screen">
+        <div class="screen " id="start-screen">
             <h1>Quiz Time!</h1>
             <p>Test Your Knowledge With This Fun Questions</p>
             <button id="start-btn">Start Quiz 😊</button>
         </div>
-        
+        <!-- Select Topic Screen -->
+         <div class="screen active" id="drop-down-list-screen">
+            <h1>SELECT THE TOPIC WHICH IS GIVEN BELOW!</h1>
+            <label for="list">Select The Topic : </label>
+            <select name="list" id="D-List">
+                <option value="select">Select</option>
+                <option value="select">General Knowledge</option>
+                <option value="select">Science</option>
+                <option value="select">History</option>
+                <option value="select">Biology</option>
+                <option value="select">Economics</option>
+                <option value="select">Mathematics</option>
+                <option value="select">English Grammar</option>
+                <option value="select">Geography</option>
+                <option value="select">Physics</option>
+                <option value="select">Current Affairs</option>
+            </select>
+         </div>
         <!-- Quiz Screen -->
         <div class="screen " id="quiz-screen">
             <div class="quiz-header">
