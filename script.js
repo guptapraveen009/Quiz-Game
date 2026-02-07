@@ -1042,13 +1042,6 @@ startButton.addEventListener("click", function start() {
   optionscreen.classList.add("active")
 }) // This Is An Event Listner when You Click On Start Quiz It Move To Quiz
 
-
-
-
-
-
-
-
 continuebtn.addEventListener("click" , function (){
   let ask = confirm("Do You Want To Continue With The Basic Quiz");
   if(ask){
@@ -1154,7 +1147,6 @@ restartButton.addEventListener("click", function restart() {
     startscreen.classList.add("active");
   }
 })
-
 
 
 Droplist.addEventListener("change" , function(event){
