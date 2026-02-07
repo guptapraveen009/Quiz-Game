@@ -6,41 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+    
     <div class="container">
         <!-- Start Screen -->
-        <div class="screen " id="start-screen">
+        <div class="screen active" id="start-screen">
+            <h1>Welcome To Quiz Challenge</h1>
             <h1>Quiz Time!</h1>
             <p>Test Your Knowledge With This Fun Questions</p>
             <button id="start-btn">Start Quiz 😊</button>
         </div>
         <!-- Select Topic Screen -->
-         <div class="screen active" id="drop-down-list-screen">
+         <div class="screen" id="drop-down-list-screen">
             <h1>SELECT THE TOPIC WHICH IS GIVEN BELOW!</h1>
-            <label for="list">Select The Topic : </label>
+            <label for="list" id="List">Select The Topic : 
             <select name="list" id="D-List">
-                <option value="select">Select</option>
-                <option value="select">General Knowledge</option>
-                <option value="select">Science</option>
-                <option value="select">History</option>
-                <option value="select">Biology</option>
-                <option value="select">Economics</option>
-                <option value="select">Mathematics</option>
-                <option value="select">English Grammar</option>
-                <option value="select">Geography</option>
-                <option value="select">Physics</option>
-                <option value="select">Current Affairs</option>
+                <option value="select" id="select">Select</option>
+                <option value="GK" id="gk">General Knowledge</option>
+                <option value="Science" id="science">Science</option>
+                <option value="History" id="history">History</option>
+                <option value="Bio" id="bio">Biology</option>
+                <option value="Economics" id="eco">Economics</option>
+                <option value="Maths" id="maths">Mathematics</option>
+                <option value="English" id="english">English Grammar</option>
+                <option value="Geo" id="geo">Geography</option>
+                <option value="Physics" id="phy">Physics</option>
+                <option value="CA" id="ca">Current Affairs</option>
             </select>
+            </label>
+            <div class="btn">
+                <p>Note : If You Want To Play Quiz With Simple 5 Basic Quiz Questions Please Click Continue Or Select Topic And Play Quiz</p>
+            <button class="continue" id="next">Continue</button>
+           
          </div>
+         </div>
+         
+         
         <!-- Quiz Screen -->
         <div class="screen " id="quiz-screen">
             <div class="quiz-header">
             <h2 id="questions-text">Question Goes Here</h2>
             <div class="quiz-info">
                 <p>
-                    Question : <span id="current-question">0</span>of <span id="total-questions">5</span>
+                    Question : <span id="current-question">0</span> of <span id="total-questions">5</span>
                 </p>
 
                 <p>

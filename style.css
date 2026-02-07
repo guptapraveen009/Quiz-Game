@@ -51,10 +51,10 @@ body{
     margin-bottom: 2rem;
 }
 
-#question-text{
+#questions-text{
     color: #333;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     line-height: 1.4;
 }
 
@@ -155,6 +155,8 @@ button{
 
 button:hover{
     background-color:#d45b28;
+    transform: scale(1.099); /* used for zoom in and zoom out */
+    transition: 0.4s ease;
 }
 
  /* Media Query  */
@@ -178,7 +180,8 @@ button:hover{
 #start-screen h1{
     color: #e86a33;
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    
 } 
 
 button{
@@ -199,7 +202,7 @@ button{
 #question-text{
     color: #333;
     font-size: 0.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     line-height: 1.4;
 }
 
@@ -207,6 +210,33 @@ button{
 display: flex;
 justify-content: space-between;
 color: #000000;
-margin-bottom: 10px;
+margin: 10px;
 }
+}
+
+.btn{
+  margin: 20px;
+    font-size: 1.7rem;
+}
+
+
+
+#List{
+    font-size: 1.5rem;
+    padding: 20px;
+}
+#D-list{
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+#drop-down-list-screen h1{
+    margin-bottom: 3rem;
+}
+
+#drop-down-list-screen select{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 0.9rem;
 }
