@@ -84,8 +84,8 @@ const generalScience = [
     Question: "What is the capital city of India?",
     Answer: [
       { text: "Mumbai", correct: false },
-      { text: "Kolkata", correct: false },
       { text: "New Delhi", correct: true },
+      { text: "Kolkata", correct: false },
       { text: "Chennai", correct: false },
     ],
   },
@@ -101,9 +101,9 @@ const generalScience = [
   {
     Question: "Which animal is officially recognized as the national animal of India?",
     Answer: [
-      { text: "Lion", correct: false },
-      { text: "Elephant", correct: false },
       { text: "Tiger", correct: true },
+      { text: "Elephant", correct: false },
+      { text: "Lion", correct: false },
       { text: "Horse", correct: false },
     ],
   },
@@ -111,9 +111,9 @@ const generalScience = [
     Question: "Which continent is the largest in the world by area?",
     Answer: [
       { text: "Africa", correct: false },
+      { text: "Australia", correct: false },
       { text: "Europe", correct: false },
       { text: "Asia", correct: true },
-      { text: "Australia", correct: false },
     ],
   },
   {
@@ -128,10 +128,10 @@ const generalScience = [
   {
     Question: "What is the official currency used in India?",
     Answer: [
-      { text: "Dollar", correct: false },
+      { text: "Rupee", correct: true },
       { text: "Euro", correct: false },
       { text: "Pound", correct: false },
-      { text: "Rupee", correct: true },
+      { text: "Dollar", correct: false },
     ],
   },
   {
@@ -155,9 +155,9 @@ const generalScience = [
   {
     Question: "Which mountain peak is the highest in the world above sea level?",
     Answer: [
-      { text: "K2", correct: false },
-      { text: "Kanchenjunga", correct: false },
       { text: "Mount Everest", correct: true },
+      { text: "Kanchenjunga", correct: false },
+      { text: "K2", correct: false },
       { text: "Annapurna", correct: false },
     ],
   },
