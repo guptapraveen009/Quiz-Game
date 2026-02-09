@@ -226,7 +226,7 @@ margin: 10px;
     padding: 20px;
 }
 #D-list{
-    font-size: 1.5rem;
+    font-size: 0.976rem;
     margin-bottom: 5rem;
 }
 
@@ -235,7 +235,7 @@ margin: 10px;
 }
 
 #drop-down-list-screen select{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 p{
     font-size: 0.9rem;
@@ -250,5 +250,8 @@ p{
     max-width: 800px;
     overflow: hidden;
     position: relative;
+}
+#drop-down-list-screen h1{
+font-size: 1.56rem;
 }
 }
