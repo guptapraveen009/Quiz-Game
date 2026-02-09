@@ -196,8 +196,8 @@ const science = [
     Answer: [
       { text: "50°C", correct: false },
       { text: "90°C", correct: false },
+      { text: "100°F", correct: false },
       { text: "100°C", correct: true },
-      { text: "120°C", correct: false },
     ],
   },
   {
@@ -221,10 +221,10 @@ const science = [
   {
     Question: "Which is the hardest naturally occurring substance on Earth?",
     Answer: [
-      { text: "Gold", correct: false },
+      { text: "Diamond", correct: true },
       { text: "Iron", correct: false },
       { text: "Silver", correct: false },
-      { text: "Diamond", correct: true },
+      { text: "Obsidian", correct: false },
     ],
   },
   {
@@ -249,9 +249,9 @@ const science = [
     Question: "What type of energy is stored in the food we eat?",
     Answer: [
       { text: "Heat energy", correct: false },
-      { text: "Light energy", correct: false },
-      { text: "Mechanical energy", correct: false },
       { text: "Chemical energy", correct: true },
+      { text: "Mechanical energy", correct: false },
+      { text: "Light Energy", correct: false },
     ],
   },
   {
@@ -279,8 +279,8 @@ const history = [
     Question: "Who discovered America in the year 1492?",
     Answer: [
       { text: "Vasco da Gama", correct: false },
-      { text: "Ferdinand Magellan", correct: false },
       { text: "Christopher Columbus", correct: true },
+      { text: "Ferdinand Magellan", correct: false },
       { text: "James Cook", correct: false },
     ],
   },
@@ -296,9 +296,9 @@ const history = [
   {
     Question: "In which year did India gain independence from British rule?",
     Answer: [
-      { text: "1945", correct: false },
-      { text: "1946", correct: false },
       { text: "1947", correct: true },
+      { text: "1946", correct: false },
+      { text: "1934", correct: false },
       { text: "1950", correct: false },
     ],
   },
@@ -316,8 +316,8 @@ const history = [
     Answer: [
       { text: "Delhi", correct: false },
       { text: "Jaipur", correct: false },
-      { text: "Agra", correct: true },
       { text: "Lucknow", correct: false },
+      { text: "Agra", correct: true },
     ],
   },
   {
@@ -342,8 +342,8 @@ const history = [
     Question: "Who was the last Governor-General of independent India?",
     Answer: [
       { text: "Lord Mountbatten", correct: false },
-      { text: "Jawaharlal Nehru", correct: false },
       { text: "C. Rajagopalachari", correct: true },
+      { text: "Jawaharlal Nehru", correct: false },
       { text: "Lord Linlithgow", correct: false },
     ],
   },
@@ -362,9 +362,9 @@ const biology = [
  {
     Question: "Which organ in the human body pumps blood to all parts?",
     Answer: [
-      { text: "Brain", correct: false },
-      { text: "Lungs", correct: false },
       { text: "Heart", correct: true },
+      { text: "Lungs", correct: false },
+      { text: "Veins", correct: false },
       { text: "Kidney", correct: false },
     ],
   },
@@ -389,9 +389,9 @@ const biology = [
   {
     Question: "Which gas is released during the process of photosynthesis?",
     Answer: [
-      { text: "Carbon dioxide", correct: false },
+      { text: "Oxgyen", correct: true },
       { text: "Nitrogen", correct: false },
-      { text: "Oxygen", correct: true },
+      { text: "Carbon dioxide", correct: false },
       { text: "Hydrogen", correct: false },
     ],
   },
@@ -416,9 +416,9 @@ const biology = [
   {
     Question: "What is the basic structural and functional unit of life?",
     Answer: [
-      { text: "Atom", correct: false },
-      { text: "Tissue", correct: false },
       { text: "Cell", correct: true },
+      { text: "Tissue", correct: false },
+      { text: "Atom", correct: false },
       { text: "Organ", correct: false },
     ],
   },
@@ -435,9 +435,9 @@ const biology = [
     Question: "Which vitamin helps in blood clotting?",
     Answer: [
       { text: "Vitamin A", correct: false },
-      { text: "Vitamin B", correct: false },
-      { text: "Vitamin C", correct: false },
       { text: "Vitamin K", correct: true },
+      { text: "Vitamin C", correct: false },
+      { text: "Vitamin B", correct: false },
     ],
   },
   {
@@ -465,8 +465,8 @@ const economic = [
     Question: "What do we call a person who buys goods or services?",
     Answer: [
       { text: "Seller", correct: false },
-      { text: "Trader", correct: false },
       { text: "Consumer", correct: true },
+      { text: "Trader", correct: false },
       { text: "Broker", correct: false },
     ],
   },
@@ -484,8 +484,8 @@ const economic = [
     Answer: [
       { text: "Savings", correct: false },
       { text: "Tax", correct: false },
-      { text: "Earnings received from work or business", correct: true },
       { text: "Loss", correct: false },
+      { text: "Earnings received from work or business", correct: true },
     ],
   },
   {
@@ -500,9 +500,9 @@ const economic = [
   {
     Question: "What is the main function of a bank?",
     Answer: [
-      { text: "Playing games", correct: false },
-      { text: "Studying books", correct: false },
       { text: "Keeping and managing money", correct: true },
+      { text: "Studying books", correct: false },
+      { text: "Playing Games", correct: false },
       { text: "Cooking food", correct: false },
     ],
   },
@@ -519,8 +519,8 @@ const economic = [
     Question: "What does supply refer to in economics?",
     Answer: [
       { text: "Price of goods", correct: false },
-      { text: "Demand for goods", correct: false },
       { text: "Availability of goods in the market", correct: true },
+      { text: "Demand For Goods", correct: false },
       { text: "Income of people", correct: false },
     ],
   },
@@ -568,8 +568,8 @@ const maths = [
     Answer: [
       { text: "Two sides", correct: false },
       { text: "Four sides", correct: false },
-      { text: "Three sides", correct: true },
       { text: "Five sides", correct: false },
+      { text: "Three sides", correct: true },
     ],
   },
   {
@@ -594,17 +594,17 @@ const maths = [
     Question: "What is the cube of the number two?",
     Answer: [
       { text: "Four", correct: false },
-      { text: "Six", correct: false },
       { text: "Eight", correct: true },
+      { text: "Six", correct: false },
       { text: "Ten", correct: false },
     ],
   },
   {
     Question: "Which is the smallest prime number?",
     Answer: [
-      { text: "One", correct: false },
-      { text: "Three", correct: false },
       { text: "Two", correct: true },
+      { text: "Three", correct: false },
+      { text: "Four", correct: false },
       { text: "Five", correct: false },
     ],
   },
@@ -622,8 +622,8 @@ const maths = [
     Answer: [
       { text: "a²", correct: false },
       { text: "2a", correct: false },
+      { text: "a", correct: false},
       { text: "4a", correct: true },
-      { text: "a", correct: false },
     ],
   },
   {
@@ -653,8 +653,8 @@ const english = [
     Answer: [
       { text: "Name", correct: false },
       { text: "Thing", correct: false },
-      { text: "Action or state", correct: true },
       { text: "Place", correct: false },
+      { text: "Action or state", correct: true },
     ],
   },
   {
@@ -671,8 +671,8 @@ const english = [
     Answer: [
       { text: "Childs", correct: false },
       { text: "Childes", correct: false },
-      { text: "Children", correct: true },
       { text: "Childrens", correct: false },
+      { text: "Children", correct: true },
     ],
   },
   {
@@ -687,9 +687,9 @@ const english = [
   {
     Question: "Which of the following words is a pronoun?",
     Answer: [
-      { text: "Run", correct: false },
-      { text: "Apple", correct: false },
       { text: "He", correct: true },
+      { text: "Apple", correct: false },
+      { text: "Run", correct: false },
       { text: "Big", correct: false },
     ],
   },
@@ -697,8 +697,8 @@ const english = [
     Question: "Which word is opposite in meaning to the word 'happy'?",
     Answer: [
       { text: "Glad", correct: false },
-      { text: "Smile", correct: false },
       { text: "Sad", correct: true },
+      { text: "Smile", correct: false },
       { text: "Joy", correct: false },
     ],
   },
@@ -714,9 +714,9 @@ const english = [
   {
     Question: "Which part of speech describes a noun?",
     Answer: [
-      { text: "Verb", correct: false },
-      { text: "Pronoun", correct: false },
       { text: "Adjective", correct: true },
+      { text: "Pronoun", correct: false },
+      { text: "Verb", correct: false },
       { text: "Sentence", correct: false },
     ],
   },
@@ -744,9 +744,9 @@ const geology = [
   {
     Question: "In which direction does the sun rise every day?",
     Answer: [
-      { text: "West", correct: false },
-      { text: "North", correct: false },
       { text: "East", correct: true },
+      { text: "North", correct: false },
+      { text: "West", correct: false },
       { text: "South", correct: false },
     ],
   },
@@ -762,9 +762,9 @@ const geology = [
   {
     Question: "Which is the longest river flowing entirely in India?",
     Answer: [
-      { text: "Yamuna", correct: false },
-      { text: "Godavari", correct: false },
       { text: "Ganga", correct: true },
+      { text: "Godavari", correct: false },
+      { text: "Yamuna", correct: false },
       { text: "Krishna", correct: false },
     ],
   },
@@ -772,17 +772,17 @@ const geology = [
     Question: "Which is the coldest continent on Earth?",
     Answer: [
       { text: "Europe", correct: false },
-      { text: "Asia", correct: false },
       { text: "Antarctica", correct: true },
+      { text: "Asia", correct: false },
       { text: "Africa", correct: false },
     ],
-  },
+  }, 
   {
     Question: "Which country does the Tropic of Cancer pass through?",
     Answer: [
       { text: "United States of America", correct: false },
-      { text: "China", correct: false },
       { text: "India", correct: true },
+      { text: "China", correct: false },
       { text: "Japan", correct: false },
     ],
   },
@@ -798,9 +798,9 @@ const geology = [
   {
     Question: "Which is the largest country in the world by area?",
     Answer: [
-      { text: "China", correct: false },
-      { text: "United States", correct: false },
       { text: "Russia", correct: true },
+      { text: "United States", correct: false },
+      { text: "China", correct: false },
       { text: "India", correct: false },
     ],
   },
@@ -816,9 +816,9 @@ const geology = [
   {
     Question: "What is the latitude value of the Equator?",
     Answer: [
-      { text: "90°", correct: false },
-      { text: "23.5°", correct: false },
       { text: "0°", correct: true },
+      { text: "23.5°", correct: false },
+      { text: "90°", correct: false },
       { text: "66.5°", correct: false },
     ],
   },
@@ -840,16 +840,16 @@ const physics = [
     Answer: [
       { text: "Meter", correct: false },
       { text: "Joule", correct: false },
-      { text: "Celsius", correct: true },
       { text: "Newton", correct: false },
+      { text: "Celsius", correct: true },
     ],
   },
   {
     Question: "Which type of energy do we receive from the Sun?",
     Answer: [
       { text: "Heat energy", correct: false },
-      { text: "Wind energy", correct: false },
       { text: "Solar energy", correct: true },
+      { text: "Wind energy", correct: false },
       { text: "Nuclear energy", correct: false },
     ],
   },
@@ -866,17 +866,17 @@ const physics = [
     Question: "What type of motion does a rotating ceiling fan show?",
     Answer: [
       { text: "Linear motion", correct: false },
-      { text: "Random motion", correct: false },
       { text: "Rotational motion", correct: true },
+      { text: "Random motion", correct: false },
       { text: "Oscillatory motion", correct: false },
     ],
   },
   {
     Question: "What is the SI unit of length?",
     Answer: [
-      { text: "Kilometer", correct: false },
-      { text: "Centimeter", correct: false },
       { text: "Meter", correct: true },
+      { text: "Centimeter", correct: false },
+      { text: "Kilometer", correct: false },
       { text: "Inch", correct: false },
     ],
   },
@@ -901,9 +901,9 @@ const physics = [
   {
     Question: "Which type of lens is used in a magnifying glass?",
     Answer: [
-      { text: "Concave lens", correct: false },
-      { text: "Plane lens", correct: false },
       { text: "Convex lens", correct: true },
+      { text: "Plane lens", correct: false },
+      { text: "Concave lens", correct: false },
       { text: "Cylindrical lens", correct: false },
     ],
   },
@@ -932,9 +932,9 @@ const currentaffairs = [
   {
     Question: "What is the capital city of the Indian state of Telangana?",
     Answer: [
-      { text: "Warangal", correct: false },
-      { text: "Karimnagar", correct: false },
       { text: "Hyderabad", correct: true },
+      { text: "Karimnagar", correct: false },
+      { text: "Warangal", correct: false },
       { text: "Nizamabad", correct: false },
     ],
   },
@@ -951,8 +951,8 @@ const currentaffairs = [
     Question: "Which country hosted the ICC Cricket World Cup in 2023?",
     Answer: [
       { text: "England", correct: false },
-      { text: "Australia", correct: false },
       { text: "India", correct: true },
+      { text: "Australia", correct: false },
       { text: "South Africa", correct: false },
     ],
   },
@@ -960,8 +960,8 @@ const currentaffairs = [
     Question: "What is the name of India’s national space agency?",
     Answer: [
       { text: "NASA", correct: false },
-      { text: "ESA", correct: false },
       { text: "ISRO", correct: true },
+      { text: "ESA", correct: false },
       { text: "ROSCOSMOS", correct: false },
     ],
   },
@@ -977,9 +977,9 @@ const currentaffairs = [
   {
     Question: "Who is the current President of India?",
     Answer: [
-      { text: "Ram Nath Kovind", correct: false },
-      { text: "Narendra Modi", correct: false },
       { text: "Droupadi Murmu", correct: true },
+      { text: "Narendra Modi", correct: false },
+      { text: "Ram Nath Kovind", correct: false },
       { text: "Sonia Gandhi", correct: false },
     ],
   },
@@ -997,8 +997,8 @@ const currentaffairs = [
     Answer: [
       { text: "Hyderabad", correct: false },
       { text: "Pune", correct: false },
-      { text: "Bengaluru", correct: true },
       { text: "Chennai", correct: false },
+      { text: "Bengaluru", correct: true },
     ],
   },
   {
