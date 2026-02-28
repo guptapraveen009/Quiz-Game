@@ -16,7 +16,7 @@ const progressBar = document.getElementById("progress");   // this  line connect
 const optionscreen = document.getElementById("drop-down-list-screen")
 const Droplist = document.getElementById("D-List");
 const selectoption = document.getElementById("select");
-const gkoption = document.getElementById("gk");
+const scoption = document.getElementById("sc");
 const scienceoption = document.getElementById("science");
 const historyoption = document.getElementById("history");
 const biooption = document.getElementById("bio");
@@ -79,7 +79,7 @@ const quizQuestions = [
   },
 ];  // This a array of objects which contain questions and answers of the quiz 
 
-const generalScience = [
+const social = [
   {
     Question: "What is the capital city of India?",
     Answer: [
@@ -170,6 +170,97 @@ const generalScience = [
       { text: "Aryabhata", correct: true },
     ],
   },
+  {
+  Question: "Which state is known as the 'Spice Garden of India'?",
+  Answer: [
+    { text: "Kerala", correct: true },
+    { text: "Punjab", correct: false },
+    { text: "Rajasthan", correct: false },
+    { text: "Bihar", correct: false },
+  ],
+},
+{
+  Question: "Which freedom fighter gave the slogan 'Give me blood, and I shall give you freedom'?",
+  Answer: [
+    { text: "Mahatma Gandhi", correct: false },
+    { text: "Bhagat Singh", correct: false },
+    { text: "Subhash Chandra Bose", correct: true },
+    { text: "Sardar Patel", correct: false },
+  ],
+},
+{
+  Question: "Which is the largest ocean in the world?",
+  Answer: [
+    { text: "Indian Ocean", correct: false },
+    { text: "Pacific Ocean", correct: true },
+    { text: "Atlantic Ocean", correct: false },
+    { text: "Arctic Ocean", correct: false },
+  ],
+},
+{
+  Question: "Which country is known as the Land of the Rising Sun?",
+  Answer: [
+    { text: "China", correct: false },
+    { text: "Thailand", correct: false },
+    { text: "Japan", correct: true },
+    { text: "Korea", correct: false },
+  ],
+},
+{
+  Question: "How many states are there in India?",
+  Answer: [
+    { text: "25", correct: false },
+    { text: "28", correct: true },
+    { text: "30", correct: false },
+    { text: "29", correct: false },
+  ],
+},
+{
+  Question: "Which planet is known as the Red Planet?",
+  Answer: [
+    { text: "Venus", correct: false },
+    { text: "Mars", correct: true },
+    { text: "Jupiter", correct: false },
+    { text: "Saturn", correct: false },
+  ],
+},
+{
+  Question: "Which festival is known as the Festival of Lights?",
+  Answer: [
+    { text: "Holi", correct: false },
+    { text: "Eid", correct: false },
+    { text: "Diwali", correct: true },
+    { text: "Christmas", correct: false },
+  ],
+},
+{
+  Question: "Who was the first Prime Minister of India?",
+  Answer: [
+    { text: "Indira Gandhi", correct: false },
+    { text: "Jawaharlal Nehru", correct: true },
+    { text: "Rajiv Gandhi", correct: false },
+    { text: "Lal Bahadur Shastri", correct: false },
+  ],
+},
+{
+  Question: "Which is the smallest continent in the world?",
+  Answer: [
+    { text: "Europe", correct: false },
+    { text: "Australia", correct: true },
+    { text: "Antarctica", correct: false },
+    { text: "South America", correct: false },
+  ],
+},
+{
+  Question: "Which Indian city is known as the Pink City?",
+  Answer: [
+    { text: "Jaipur", correct: true },
+    { text: "Udaipur", correct: false },
+    { text: "Jodhpur", correct: false },
+    { text: "Bhopal", correct: false },
+  ],
+}
+
 ];
 
 const science = [
@@ -263,10 +354,100 @@ const science = [
       { text: "8", correct: false },
     ],
   },
+  {
+    Question: "What is the SI unit of pressure?",
+    Answer: [
+      { text: "Pascal", correct: true },
+      { text: "Newton", correct: false },
+      { text: "Joule", correct: false },
+      { text: "Watt", correct: false },
+    ],
+  },
+  {
+    Question: "Which organ helps in breathing?",
+    Answer: [
+      { text: "Heart", correct: false },
+      { text: "Lungs", correct: true },
+      { text: "Kidney", correct: false },
+      { text: "Brain", correct: false },
+    ],
+  },
+  {
+    Question: "Which vitamin helps in blood clotting?",
+    Answer: [
+      { text: "Vitamin A", correct: false },
+      { text: "Vitamin K", correct: true },
+      { text: "Vitamin C", correct: false },
+      { text: "Vitamin D", correct: false },
+    ],
+  },
+  {
+    Question: "Which planet is closest to the Sun?",
+    Answer: [
+      { text: "Venus", correct: false },
+      { text: "Mercury", correct: true },
+      { text: "Earth", correct: false },
+      { text: "Mars", correct: false },
+    ],
+  },
+  {
+    Question: "What is the chemical symbol of Gold?",
+    Answer: [
+      { text: "Go", correct: false },
+      { text: "Au", correct: true },
+      { text: "Ag", correct: false },
+      { text: "Gd", correct: false },
+    ],
+  },
+  {
+    Question: "Which gas do plants release during photosynthesis?",
+    Answer: [
+      { text: "Oxygen", correct: true },
+      { text: "Carbon dioxide", correct: false },
+      { text: "Nitrogen", correct: false },
+      { text: "Hydrogen", correct: false },
+    ],
+  },
+  {
+    Question: "Which part of the brain controls balance?",
+    Answer: [
+      { text: "Cerebrum", correct: false },
+      { text: "Cerebellum", correct: true },
+      { text: "Medulla", correct: false },
+      { text: "Spinal cord", correct: false },
+    ],
+  },
+  {
+    Question: "Speed is distance divided by?",
+    Answer: [
+      { text: "Time", correct: true },
+      { text: "Mass", correct: false },
+      { text: "Force", correct: false },
+      { text: "Energy", correct: false },
+    ],
+  },
+  {
+    Question: "Which metal is used in electric wires?",
+    Answer: [
+      { text: "Iron", correct: false },
+      { text: "Copper", correct: true },
+      { text: "Silver", correct: false },
+      { text: "Gold", correct: false },
+    ],
+  },
+  {
+    Question: "What is the pH value of pure water?",
+    Answer: [
+      { text: "5", correct: false },
+      { text: "7", correct: true },
+      { text: "9", correct: false },
+      { text: "1", correct: false },
+    ],
+  },
 ]
 
 const history = [
- {
+  {
     Question: "Who was the first Prime Minister of independent India?",
     Answer: [
       { text: "Mahatma Gandhi", correct: false },
@@ -356,10 +537,100 @@ const history = [
       { text: "Indian Independence Act, 1947", correct: false },
     ],
   },
+  {
+    Question: "Who was the first Governor-General of independent India?",
+    Answer: [
+      { text: "Lord Mountbatten", correct: false },
+      { text: "C. Rajagopalachari", correct: true },
+      { text: "Jawaharlal Nehru", correct: false },
+      { text: "Dr. Rajendra Prasad", correct: false },
+    ],
+  },
+  {
+    Question: "In which year did World War II end?",
+    Answer: [
+      { text: "1942", correct: false },
+      { text: "1945", correct: true },
+      { text: "1939", correct: false },
+      { text: "1950", correct: false },
+    ],
+  },
+  {
+    Question: "Who founded the Gupta Empire?",
+    Answer: [
+      { text: "Samudragupta", correct: false },
+      { text: "Chandragupta I", correct: true },
+      { text: "Ashoka", correct: false },
+      { text: "Harsha", correct: false },
+    ],
+  },
+  {
+    Question: "The Revolt of 1857 started in which city?",
+    Answer: [
+      { text: "Delhi", correct: false },
+      { text: "Meerut", correct: true },
+      { text: "Kanpur", correct: false },
+      { text: "Lucknow", correct: false },
+    ],
+  },
+  {
+    Question: "Who was known as the Nightingale of India?",
+    Answer: [
+      { text: "Indira Gandhi", correct: false },
+      { text: "Sarojini Naidu", correct: true },
+      { text: "Annie Besant", correct: false },
+      { text: "Kasturba Gandhi", correct: false },
+    ],
+  },
+  {
+    Question: "Who wrote 'Discovery of India'?",
+    Answer: [
+      { text: "Mahatma Gandhi", correct: false },
+      { text: "Jawaharlal Nehru", correct: true },
+      { text: "Tagore", correct: false },
+      { text: "Subhash Bose", correct: false },
+    ],
+  },
+  {
+    Question: "Who built the Red Fort in Delhi?",
+    Answer: [
+      { text: "Akbar", correct: false },
+      { text: "Shah Jahan", correct: true },
+      { text: "Babur", correct: false },
+      { text: "Humayun", correct: false },
+    ],
+  },
+  {
+    Question: "When did the French Revolution begin?",
+    Answer: [
+      { text: "1789", correct: true },
+      { text: "1776", correct: false },
+      { text: "1800", correct: false },
+      { text: "1757", correct: false },
+    ],
+  },
+  {
+    Question: "Who was the first woman Prime Minister of India?",
+    Answer: [
+      { text: "Sarojini Naidu", correct: false },
+      { text: "Indira Gandhi", correct: true },
+      { text: "Pratibha Patil", correct: false },
+      { text: "Sonia Gandhi", correct: false },
+    ],
+  },
+  {
+    Question: "The Non-Cooperation Movement started in which year?",
+    Answer: [
+      { text: "1920", correct: true },
+      { text: "1919", correct: false },
+      { text: "1930", correct: false },
+      { text: "1942", correct: false },
+    ],
+  },
 ]
 
 const biology = [
- {
+  {
     Question: "Which organ in the human body pumps blood to all parts?",
     Answer: [
       { text: "Heart", correct: true },
@@ -449,10 +720,100 @@ const biology = [
       { text: "Australopithecus", correct: false },
     ],
   },
+  {
+    Question: "What is the basic unit of life?",
+    Answer: [
+      { text: "Tissue", correct: false },
+      { text: "Cell", correct: true },
+      { text: "Organ", correct: false },
+      { text: "Atom", correct: false },
+    ],
+  },
+  {
+    Question: "Which blood cells fight infection?",
+    Answer: [
+      { text: "RBC", correct: false },
+      { text: "WBC", correct: true },
+      { text: "Platelets", correct: false },
+      { text: "Plasma", correct: false },
+    ],
+  },
+  {
+    Question: "Which organ purifies blood?",
+    Answer: [
+      { text: "Heart", correct: false },
+      { text: "Kidney", correct: true },
+      { text: "Lungs", correct: false },
+      { text: "Brain", correct: false },
+    ],
+  },
+  {
+    Question: "Photosynthesis occurs in which part of plant?",
+    Answer: [
+      { text: "Root", correct: false },
+      { text: "Leaf", correct: true },
+      { text: "Stem", correct: false },
+      { text: "Flower", correct: false },
+    ],
+  },
+  {
+    Question: "How many chambers are in human heart?",
+    Answer: [
+      { text: "2", correct: false },
+      { text: "3", correct: false },
+      { text: "4", correct: true },
+      { text: "5", correct: false },
+    ],
+  },
+  {
+    Question: "Which vitamin is good for eyes?",
+    Answer: [
+      { text: "Vitamin A", correct: true },
+      { text: "Vitamin C", correct: false },
+      { text: "Vitamin D", correct: false },
+      { text: "Vitamin B", correct: false },
+    ],
+  },
+  {
+    Question: "Which organ helps in digestion?",
+    Answer: [
+      { text: "Stomach", correct: true },
+      { text: "Lungs", correct: false },
+      { text: "Brain", correct: false },
+      { text: "Heart", correct: false },
+    ],
+  },
+  {
+    Question: "Which part carries oxygen in blood?",
+    Answer: [
+      { text: "Platelets", correct: false },
+      { text: "RBC", correct: true },
+      { text: "WBC", correct: false },
+      { text: "Plasma", correct: false },
+    ],
+  },
+  {
+    Question: "Which is the largest organ in human body?",
+    Answer: [
+      { text: "Liver", correct: false },
+      { text: "Skin", correct: true },
+      { text: "Heart", correct: false },
+      { text: "Brain", correct: false },
+    ],
+  },
+  {
+    Question: "DNA stands for?",
+    Answer: [
+      { text: "Deoxyribonucleic Acid", correct: true },
+      { text: "Ribonucleic Acid", correct: false },
+      { text: "Dynamic Acid", correct: false },
+      { text: "Double Acid", correct: false },
+    ],
+  },
 ]
 
 const economic = [
-   {
+  {
     Question: "What is the main purpose of money in daily life?",
     Answer: [
       { text: "For decoration purposes", correct: false },
@@ -542,10 +903,100 @@ const economic = [
       { text: "No circulation of money", correct: false },
     ],
   },
+  {
+    Question: "What is the currency of India?",
+    Answer: [
+      { text: "Dollar", correct: false },
+      { text: "Rupee", correct: true },
+      { text: "Euro", correct: false },
+      { text: "Yen", correct: false },
+    ],
+  },
+  {
+    Question: "GDP stands for?",
+    Answer: [
+      { text: "Gross Domestic Product", correct: true },
+      { text: "Global Domestic Product", correct: false },
+      { text: "General Domestic Product", correct: false },
+      { text: "Gross Development Product", correct: false },
+    ],
+  },
+  {
+    Question: "Bank that controls money supply in India?",
+    Answer: [
+      { text: "SBI", correct: false },
+      { text: "RBI", correct: true },
+      { text: "ICICI", correct: false },
+      { text: "PNB", correct: false },
+    ],
+  },
+  {
+    Question: "Inflation means?",
+    Answer: [
+      { text: "Rise in prices", correct: true },
+      { text: "Fall in prices", correct: false },
+      { text: "Increase in salary", correct: false },
+      { text: "Decrease in tax", correct: false },
+    ],
+  },
+  {
+    Question: "Demand increases when price?",
+    Answer: [
+      { text: "Rises", correct: false },
+      { text: "Falls", correct: true },
+      { text: "Stays same", correct: false },
+      { text: "Doubles", correct: false },
+    ],
+  },
+  {
+    Question: "Budget is presented by?",
+    Answer: [
+      { text: "Prime Minister", correct: false },
+      { text: "Finance Minister", correct: true },
+      { text: "President", correct: false },
+      { text: "Governor", correct: false },
+    ],
+  },
+  {
+    Question: "Tax paid on goods is called?",
+    Answer: [
+      { text: "Income Tax", correct: false },
+      { text: "GST", correct: true },
+      { text: "Service Tax", correct: false },
+      { text: "Road Tax", correct: false },
+    ],
+  },
+  {
+    Question: "Money deposited in bank earns?",
+    Answer: [
+      { text: "Loss", correct: false },
+      { text: "Interest", correct: true },
+      { text: "Tax", correct: false },
+      { text: "Fine", correct: false },
+    ],
+  },
+  {
+    Question: "Export means?",
+    Answer: [
+      { text: "Buy goods", correct: false },
+      { text: "Sell goods to other countries", correct: true },
+      { text: "Pay tax", correct: false },
+      { text: "Save money", correct: false },
+    ],
+  },
+  {
+    Question: "Import means?",
+    Answer: [
+      { text: "Sell goods", correct: false },
+      { text: "Buy goods from other countries", correct: true },
+      { text: "Save goods", correct: false },
+      { text: "Manufacture goods", correct: false },
+    ],
+  },
 ]
 
 const maths = [
-    {
+  {
     Question: "What is the sum of five and five?",
     Answer: [
       { text: "Eight", correct: false },
@@ -622,7 +1073,7 @@ const maths = [
     Answer: [
       { text: "a²", correct: false },
       { text: "2a", correct: false },
-      { text: "a", correct: false},
+      { text: "a", correct: false },
       { text: "4a", correct: true },
     ],
   },
@@ -635,11 +1086,101 @@ const maths = [
       { text: "Fourteen", correct: false },
     ],
   },
+  {
+    Question: "What is 25 × 4?",
+    Answer: [
+      { text: "50", correct: false },
+      { text: "75", correct: false },
+      { text: "100", correct: true },
+      { text: "125", correct: false },
+    ],
+  },
+  {
+    Question: "What is the square root of 64?",
+    Answer: [
+      { text: "6", correct: false },
+      { text: "7", correct: false },
+      { text: "8", correct: true },
+      { text: "9", correct: false },
+    ],
+  },
+  {
+    Question: "What is 100 ÷ 5?",
+    Answer: [
+      { text: "10", correct: false },
+      { text: "20", correct: true },
+      { text: "25", correct: false },
+      { text: "5", correct: false },
+    ],
+  },
+  {
+    Question: "What is 12²?",
+    Answer: [
+      { text: "124", correct: false },
+      { text: "144", correct: true },
+      { text: "122", correct: false },
+      { text: "154", correct: false },
+    ],
+  },
+  {
+    Question: "What is 45 + 55?",
+    Answer: [
+      { text: "90", correct: false },
+      { text: "100", correct: true },
+      { text: "110", correct: false },
+      { text: "95", correct: false },
+    ],
+  },
+  {
+    Question: "What is 7 × 8?",
+    Answer: [
+      { text: "54", correct: false },
+      { text: "56", correct: true },
+      { text: "64", correct: false },
+      { text: "48", correct: false },
+    ],
+  },
+  {
+    Question: "What is 81 ÷ 9?",
+    Answer: [
+      { text: "8", correct: false },
+      { text: "9", correct: true },
+      { text: "7", correct: false },
+      { text: "6", correct: false },
+    ],
+  },
+  {
+    Question: "What is 15% of 200?",
+    Answer: [
+      { text: "25", correct: false },
+      { text: "30", correct: true },
+      { text: "35", correct: false },
+      { text: "20", correct: false },
+    ],
+  },
+  {
+    Question: "What is the value of π (approx)?",
+    Answer: [
+      { text: "3.14", correct: true },
+      { text: "2.14", correct: false },
+      { text: "4.13", correct: false },
+      { text: "3.41", correct: false },
+    ],
+  },
+  {
+    Question: "What is 9³?",
+    Answer: [
+      { text: "729", correct: true },
+      { text: "81", correct: false },
+      { text: "512", correct: false },
+      { text: "243", correct: false },
+    ],
+  },
 ]
 
 
 const english = [
-   {
+  {
     Question: "What do we call a word that names a person, place, or thing?",
     Answer: [
       { text: "Action word", correct: false },
@@ -729,10 +1270,100 @@ const english = [
       { text: "Continuous tense", correct: false },
     ],
   },
+  {
+    Question: "What is the synonym of 'Happy'?",
+    Answer: [
+      { text: "Sad", correct: false },
+      { text: "Joyful", correct: true },
+      { text: "Angry", correct: false },
+      { text: "Tired", correct: false },
+    ],
+  },
+  {
+    Question: "What is the antonym of 'Big'?",
+    Answer: [
+      { text: "Large", correct: false },
+      { text: "Huge", correct: false },
+      { text: "Small", correct: true },
+      { text: "Wide", correct: false },
+    ],
+  },
+  {
+    Question: "Choose the correct spelling:",
+    Answer: [
+      { text: "Recieve", correct: false },
+      { text: "Receive", correct: true },
+      { text: "Receeve", correct: false },
+      { text: "Receve", correct: false },
+    ],
+  },
+  {
+    Question: "Which is a noun?",
+    Answer: [
+      { text: "Run", correct: false },
+      { text: "Quickly", correct: false },
+      { text: "School", correct: true },
+      { text: "Blue", correct: false },
+    ],
+  },
+  {
+    Question: "Choose the correct tense: She ___ to school daily.",
+    Answer: [
+      { text: "go", correct: false },
+      { text: "goes", correct: true },
+      { text: "gone", correct: false },
+      { text: "going", correct: false },
+    ],
+  },
+  {
+    Question: "What is the plural of 'Child'?",
+    Answer: [
+      { text: "Childs", correct: false },
+      { text: "Children", correct: true },
+      { text: "Childes", correct: false },
+      { text: "Childrens", correct: false },
+    ],
+  },
+  {
+    Question: "Which is a verb?",
+    Answer: [
+      { text: "Dance", correct: true },
+      { text: "Beauty", correct: false },
+      { text: "Honest", correct: false },
+      { text: "Table", correct: false },
+    ],
+  },
+  {
+    Question: "Fill in the blank: He is ___ honest man.",
+    Answer: [
+      { text: "a", correct: false },
+      { text: "an", correct: true },
+      { text: "the", correct: false },
+      { text: "no article", correct: false },
+    ],
+  },
+  {
+    Question: "Which is a pronoun?",
+    Answer: [
+      { text: "He", correct: true },
+      { text: "Run", correct: false },
+      { text: "Beautiful", correct: false },
+      { text: "Chair", correct: false },
+    ],
+  },
+  {
+    Question: "Choose the correct sentence:",
+    Answer: [
+      { text: "She don't like tea.", correct: false },
+      { text: "She doesn't like tea.", correct: true },
+      { text: "She not like tea.", correct: false },
+      { text: "She didn't likes tea.", correct: false },
+    ],
+  },
 ]
 
 const geology = [
-   {
+  {
     Question: "Which is the largest ocean on the Earth?",
     Answer: [
       { text: "Indian Ocean", correct: false },
@@ -776,7 +1407,7 @@ const geology = [
       { text: "Asia", correct: false },
       { text: "Africa", correct: false },
     ],
-  }, 
+  },
   {
     Question: "Which country does the Tropic of Cancer pass through?",
     Answer: [
@@ -822,11 +1453,101 @@ const geology = [
       { text: "66.5°", correct: false },
     ],
   },
+  {
+    Question: "Which is the largest continent?",
+    Answer: [
+      { text: "Africa", correct: false },
+      { text: "Asia", correct: true },
+      { text: "Europe", correct: false },
+      { text: "Australia", correct: false },
+    ],
+  },
+  {
+    Question: "Which is the longest river in India?",
+    Answer: [
+      { text: "Yamuna", correct: false },
+      { text: "Ganga", correct: true },
+      { text: "Godavari", correct: false },
+      { text: "Krishna", correct: false },
+    ],
+  },
+  {
+    Question: "Which is the highest plateau in the world?",
+    Answer: [
+      { text: "Deccan Plateau", correct: false },
+      { text: "Tibetan Plateau", correct: true },
+      { text: "Malwa Plateau", correct: false },
+      { text: "Chotanagpur Plateau", correct: false },
+    ],
+  },
+  {
+    Question: "Which line divides the Earth into two equal halves?",
+    Answer: [
+      { text: "Tropic of Cancer", correct: false },
+      { text: "Equator", correct: true },
+      { text: "Prime Meridian", correct: false },
+      { text: "Arctic Circle", correct: false },
+    ],
+  },
+  {
+    Question: "Which is the largest ocean?",
+    Answer: [
+      { text: "Indian Ocean", correct: false },
+      { text: "Pacific Ocean", correct: true },
+      { text: "Atlantic Ocean", correct: false },
+      { text: "Arctic Ocean", correct: false },
+    ],
+  },
+  {
+    Question: "Which country has the largest population?",
+    Answer: [
+      { text: "USA", correct: false },
+      { text: "India", correct: true },
+      { text: "Russia", correct: false },
+      { text: "Brazil", correct: false },
+    ],
+  },
+  {
+    Question: "Which desert is located in India?",
+    Answer: [
+      { text: "Sahara", correct: false },
+      { text: "Thar", correct: true },
+      { text: "Gobi", correct: false },
+      { text: "Kalahari", correct: false },
+    ],
+  },
+  {
+    Question: "Which is the coldest continent?",
+    Answer: [
+      { text: "Asia", correct: false },
+      { text: "Antarctica", correct: true },
+      { text: "Europe", correct: false },
+      { text: "Africa", correct: false },
+    ],
+  },
+  {
+    Question: "Which is the smallest continent?",
+    Answer: [
+      { text: "Australia", correct: true },
+      { text: "Europe", correct: false },
+      { text: "Antarctica", correct: false },
+      { text: "Africa", correct: false },
+    ],
+  },
+  {
+    Question: "Mount Everest is located in which mountain range?",
+    Answer: [
+      { text: "Andes", correct: false },
+      { text: "Himalayas", correct: true },
+      { text: "Alps", correct: false },
+      { text: "Rockies", correct: false },
+    ],
+  },
 ]
 
 
 const physics = [
-   {
+  {
     Question: "Which force pulls objects toward the Earth?",
     Answer: [
       { text: "Magnetism", correct: false },
@@ -914,6 +1635,96 @@ const physics = [
       { text: "Power", correct: false },
       { text: "Energy", correct: true },
       { text: "Speed", correct: false },
+    ],
+  },
+  {
+    Question: "What is the unit of electric current?",
+    Answer: [
+      { text: "Volt", correct: false },
+      { text: "Ampere", correct: true },
+      { text: "Watt", correct: false },
+      { text: "Ohm", correct: false },
+    ],
+  },
+  {
+    Question: "Who discovered gravity?",
+    Answer: [
+      { text: "Einstein", correct: false },
+      { text: "Newton", correct: true },
+      { text: "Galileo", correct: false },
+      { text: "Tesla", correct: false },
+    ],
+  },
+  {
+    Question: "Speed of light is approximately?",
+    Answer: [
+      { text: "3 × 10^8 m/s", correct: true },
+      { text: "3 × 10^6 m/s", correct: false },
+      { text: "3 × 10^5 m/s", correct: false },
+      { text: "3 × 10^3 m/s", correct: false },
+    ],
+  },
+  {
+    Question: "Which mirror is used in vehicles?",
+    Answer: [
+      { text: "Plane mirror", correct: false },
+      { text: "Concave mirror", correct: false },
+      { text: "Convex mirror", correct: true },
+      { text: "None", correct: false },
+    ],
+  },
+  {
+    Question: "Unit of power is?",
+    Answer: [
+      { text: "Watt", correct: true },
+      { text: "Joule", correct: false },
+      { text: "Newton", correct: false },
+      { text: "Pascal", correct: false },
+    ],
+  },
+  {
+    Question: "Sound travels fastest in?",
+    Answer: [
+      { text: "Air", correct: false },
+      { text: "Water", correct: false },
+      { text: "Solid", correct: true },
+      { text: "Vacuum", correct: false },
+    ],
+  },
+  {
+    Question: "Device used to measure temperature?",
+    Answer: [
+      { text: "Barometer", correct: false },
+      { text: "Thermometer", correct: true },
+      { text: "Ammeter", correct: false },
+      { text: "Voltmeter", correct: false },
+    ],
+  },
+  {
+    Question: "What type of energy is stored in a battery?",
+    Answer: [
+      { text: "Mechanical", correct: false },
+      { text: "Chemical", correct: true },
+      { text: "Nuclear", correct: false },
+      { text: "Solar", correct: false },
+    ],
+  },
+  {
+    Question: "Which lens is used to correct short sight?",
+    Answer: [
+      { text: "Convex", correct: false },
+      { text: "Concave", correct: true },
+      { text: "Plane", correct: false },
+      { text: "None", correct: false },
+    ],
+  },
+  {
+    Question: "Force = Mass × ?",
+    Answer: [
+      { text: "Speed", correct: false },
+      { text: "Acceleration", correct: true },
+      { text: "Distance", correct: false },
+      { text: "Time", correct: false },
     ],
   },
 ]
@@ -1010,10 +1821,100 @@ const currentaffairs = [
       { text: "Uttarakhand", correct: false },
     ],
   },
+  {
+    Question: "Who is the current President of India (2025)?",
+    Answer: [
+      { text: "Droupadi Murmu", correct: true },
+      { text: "Narendra Modi", correct: false },
+      { text: "Amit Shah", correct: false },
+      { text: "Rajnath Singh", correct: false },
+    ],
+  },
+  {
+    Question: "G20 Summit 2023 was hosted by which country?",
+    Answer: [
+      { text: "USA", correct: false },
+      { text: "India", correct: true },
+      { text: "China", correct: false },
+      { text: "UK", correct: false },
+    ],
+  },
+  {
+    Question: "Chandrayaan-3 mission belongs to which country?",
+    Answer: [
+      { text: "USA", correct: false },
+      { text: "India", correct: true },
+      { text: "Russia", correct: false },
+      { text: "China", correct: false },
+    ],
+  },
+  {
+    Question: "Which organization conducts IPL?",
+    Answer: [
+      { text: "ICC", correct: false },
+      { text: "BCCI", correct: true },
+      { text: "FIFA", correct: false },
+      { text: "IOC", correct: false },
+    ],
+  },
+  {
+    Question: "Digital India campaign was launched in?",
+    Answer: [
+      { text: "2014", correct: false },
+      { text: "2015", correct: true },
+      { text: "2016", correct: false },
+      { text: "2013", correct: false },
+    ],
+  },
+  {
+    Question: "Which country won Cricket World Cup 2023?",
+    Answer: [
+      { text: "India", correct: false },
+      { text: "Australia", correct: true },
+      { text: "England", correct: false },
+      { text: "Pakistan", correct: false },
+    ],
+  },
+  {
+    Question: "ISRO headquarters is located in?",
+    Answer: [
+      { text: "Mumbai", correct: false },
+      { text: "Bengaluru", correct: true },
+      { text: "Delhi", correct: false },
+      { text: "Hyderabad", correct: false },
+    ],
+  },
+  {
+    Question: "Which Indian state launched 'Gruha Lakshmi' scheme?",
+    Answer: [
+      { text: "Telangana", correct: false },
+      { text: "Karnataka", correct: true },
+      { text: "Tamil Nadu", correct: false },
+      { text: "Kerala", correct: false },
+    ],
+  },
+  {
+    Question: "UPI stands for?",
+    Answer: [
+      { text: "Unified Payment Interface", correct: true },
+      { text: "United Payment India", correct: false },
+      { text: "Universal Pay Interface", correct: false },
+      { text: "Unified Private Interface", correct: false },
+    ],
+  },
+  {
+    Question: "Which country hosted Olympics 2024?",
+    Answer: [
+      { text: "USA", correct: false },
+      { text: "France", correct: true },
+      { text: "Japan", correct: false },
+      { text: "China", correct: false },
+    ],
+  },
 ]
 
 const allQuestions = {
-  GK: generalScience,
+  SC: social,
   Science: science,
   History: history,
   Bio: biology,
@@ -1042,17 +1943,17 @@ startButton.addEventListener("click", function start() {
   optionscreen.classList.add("active")
 }) // This Is An Event Listner when You Click On Start Quiz It Move To Quiz
 
-continuebtn.addEventListener("click" , function (){
+continuebtn.addEventListener("click", function () {
   let ask = confirm("Do You Want To Continue With The Basic Quiz");
-  if(ask){
-currentQuestionIndex = 0
-  score = 0
-  scoreSpan.textContent = score
-  optionscreen.classList.remove("active");
-  quizScreen.classList.add("active")
-   showquestion()
+  if (ask) {
+    currentQuestionIndex = 0
+    score = 0
+    scoreSpan.textContent = score
+    optionscreen.classList.remove("active");
+    quizScreen.classList.add("active")
+    showquestion()
   }
-  else{
+  else {
     quizScreen.classList.remove("active");
     optionscreen.classList.add("active");
   }
@@ -1070,7 +1971,7 @@ function showquestion() {
 
   questionText.textContent = currentQuestion.question
 
-  
+
 
   answersContainer.innerHTML = "";
 
@@ -1096,8 +1997,8 @@ function showquestion() {
           button.classList.add("incorrect")
         }
       })
-        // Score Update
-      if (iscorrect = true) {
+      // Score Update
+      if (iscorrect === true) {
         score++
         scoreSpan.textContent = score;
       }
@@ -1149,24 +2050,30 @@ restartButton.addEventListener("click", function restart() {
 })
 
 
-Droplist.addEventListener("change" , function(event){
+Droplist.addEventListener("change", function (event) {
 
   totalQuestionsSpan.textContent = Object.keys(allQuestions).length; // Total Questions In Quiz
   maxScoreSpan.textContent = Object.keys(allQuestions).length
 
-    const Topic = event.target.value;
-      if(!Topic) return
-    QuizQuestion = allQuestions[Topic];
- currentQuestionIndex = 0 
- score = 0; 
+  const Topic = event.target.value;
+  if (!Topic) return
+  let RandomQuestion  = allQuestions[Topic];
+  QuizQuestion = getRandomQuestions(RandomQuestion , 10);
+  currentQuestionIndex = 0
+  score = 0;
 
- scoreSpan.textContent = score
+  scoreSpan.textContent = score
 
-optionscreen.classList.remove("active");
-quizScreen.classList.add("active");
+  optionscreen.classList.remove("active");
+  quizScreen.classList.add("active");
 
-showquestions()
+  showquestions()
 })
+function getRandomQuestions(questionArray, limit) {
+  let shuffled = [...questionArray].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, limit);
+}
+
 function showquestions() {
   answersDisabled = false
 
@@ -1180,7 +2087,7 @@ function showquestions() {
   questionText.textContent = currentQuestion.Question;
 
   answersContainer.innerHTML = "";
-  
+
   currentQuestion.Answer.forEach(answers => {
     const button = document.createElement("button");
     button.textContent = answers.text
@@ -1203,7 +2110,7 @@ function showquestions() {
           button.classList.add("incorrect")
         }
       })
-        // Score Update
+      // Score Update
       if (iscorrect === true) {
         score++
         scoreSpan.textContent = score;
