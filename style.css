@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #f5efe6;
+    background-color: #f4f0e0; /* change it */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,15 +15,28 @@ body{
 }
 
 .container{
-    background-color: white;
+    background-color: rgb(235, 234, 234); /* change it*/
     border-radius: 1rem;
-    box-shadow: 0px  10px 30px rgb(0, 0, 0);
+    box-shadow: 0px  10px 30px rgb(80, 78, 78);
     width: 100%;
     max-width: 600px;
     overflow: hidden;
     position: relative;
 }
-
+#note{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px;
+}
+body.dark .container {
+  box-shadow: 5px 10px 30px rgb(100, 155, 222);
+}
+body.dark {
+ background-color: #262626;
+  color: #4a4949;
+}
 .screen{
     display: none;
     padding: 2rem;
@@ -37,13 +50,13 @@ body{
 
 /* Start Screen */
 #start-screen h1{
-    color: #e86a33;
+    color: #e67443; /*change it*/
     margin-bottom: 20px;
     font-size: 2.5rem;
 } 
 
 #start-screen p{
-    color: #666;
+    color: #000000;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
@@ -158,8 +171,18 @@ button:hover{
     transform: scale(1.099); /* used for zoom in and zoom out */
     transition: 0.4s ease;
 }
+#dark-mode{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+#dark-mode:hover{
+    cursor: pointer;
+}
 
  /* Media Query  */
+
 @media (max-width : 500px) {
  .container{
     background-color: white;
@@ -170,7 +193,20 @@ button:hover{
     overflow: hidden;
     position: relative;
 }   
-    
+    #note{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px;
+}
+body.dark .container {
+  box-shadow: 5px 10px 30px rgb(100, 155, 222);
+}
+body.dark {
+ background-color: #262626;
+  color: #4a4949;
+}
 #start-screen p{
     color: #666;
     margin-bottom: 0.5rem;

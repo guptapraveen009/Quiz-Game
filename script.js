@@ -1,6 +1,9 @@
 const startscreen = document.getElementById("start-screen");    // this  line connects javascript to html element using id
 const quizScreen = document.getElementById("quiz-screen");   // this  line connects javascript to html element using id
 const resultScreen = document.getElementById("result-screen");   // this  line connects javascript to html element using id
+const darkmode = document.getElementById("dark-mode");
+const contain = document.querySelector(".container");
+const head = document.querySelector(".heading")
 const startButton = document.getElementById("start-btn");   // this  line connects javascript to html element using id
 const questionText = document.getElementById("questions-text");   // this line connects javascript to html element using id 
 const answersContainer = document.getElementById("answer-container");   // this line connects javascript to html element using id 
@@ -27,6 +30,7 @@ const geooption = document.getElementById("geo");
 const phyoption = document.getElementById("phy");
 const caoption = document.getElementById("ca");
 const continuebtn = document.getElementById("next");
+
 const quizQuestions = [
   {
     question: "What is the capital of France?",
@@ -2151,3 +2155,14 @@ function showquestions() {
     answersContainer.appendChild(button)
   })
 }
+
+darkmode.addEventListener("click" , () => {
+  document.body.classList.toggle("dark") 
+  
+  contain.style.backgroundColor = "#D3D5D7"
+  contain.style.color = "#000000"
+  startButton.style.backgroundColor = "#000";
+  startButton.style.color = "#fff";
+  startButton.style.boxShadow = "5px 10px 30px rgb(100, 155, 222)"
+  
+ })

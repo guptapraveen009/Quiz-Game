@@ -6,23 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game</title>
     <link rel="stylesheet" href="style.css">
-    
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <body>
     
     <div class="container">
+        
         <!-- Start Screen -->
         <div class="screen active" id="start-screen">
+            <div class="heading">
             <h1>Welcome To Quiz Challenge</h1>
             <h1>Quiz Time!</h1>
             <p>Test Your Knowledge With This Fun Questions</p>
+
+            <ul id="note"><b>Note</b>
+            <li>There are two types of quiz in this challenge one basic and second topic quiz . You Can Choose any one .</li>
+            <li>The Basic Quiz Has 5 Basic Questions and The Topics Quiz Has 10 Questions For Each Topic .</li>
+              <li>Ones You Start Attending The Question You Cannot Go To Previous Question.</li>
+               <li>After You Complete All Questions Who Will Get The Score According To Your Answers of The Questions</li>    
+        </ul>
+            </div>
             <button id="start-btn">Start Quiz 😊</button>
+             <i class="fa-sharp fa-solid fa-moon" id="dark-mode"></i>
         </div>
+     
+        
         <!-- Select Topic Screen -->
          <div class="screen" id="drop-down-list-screen">
-            <h1>SELECT THE TOPIC WHICH IS GIVEN BELOW!</h1>
+            <h1 id="">SELECT THE TOPIC WHICH IS GIVEN BELOW!</h1>
             <label for="list" id="List">Select The Topic : 
             <select name="list" id="D-List">
                 <option value="select" id="select">Select</option>
@@ -40,7 +51,7 @@
             </label>
             <div class="btn">
                 <p>Note : If You Want To Play Quiz With Simple 5 Basic Quiz Questions Please Click Continue Or Select Topic And Play Quiz</p>
-            <button class="continue" id="next">Continue</button>
+            <button class="continue" id="next">Basic Quiz</button>
            
          </div>
          </div>
