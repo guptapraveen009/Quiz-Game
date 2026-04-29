@@ -33,6 +33,10 @@ body{
 body.dark .container {
   box-shadow: 5px 10px 30px rgb(100, 155, 222);
 }
+body.dark button{
+    background-color: #262626;
+    color: #e6fff0;
+}
 body.dark {
  background-color: #262626;
   color: #4a4949;

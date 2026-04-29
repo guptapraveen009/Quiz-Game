@@ -2161,8 +2161,6 @@ darkmode.addEventListener("click" , () => {
   
   contain.style.backgroundColor = "#D3D5D7"
   contain.style.color = "#000000"
-  startButton.style.backgroundColor = "#000";
-  startButton.style.color = "#fff";
-  startButton.style.boxShadow = "5px 10px 30px rgb(100, 155, 222)"
+
   
  })
