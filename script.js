@@ -2050,7 +2050,7 @@ restartButton.addEventListener("click", function restart() {
     resultScreen.classList.remove("active");
 
     startscreen.classList.add("active");
-    Droplist.value = ""
+    Droplist.value = selectoption.value
   }
 })
 
