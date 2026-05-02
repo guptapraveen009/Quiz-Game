@@ -2048,8 +2048,7 @@ restartButton.addEventListener("click", function restart() {
     resultScreen.classList.remove("active");
 
     startscreen.classList.add("active");
-    currentQuestionIndex = 0
-    score = 0;
+   totalQuestionsSpan.textContent = quizQuestions.length; 
   }
 })
 
