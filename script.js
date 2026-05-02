@@ -1951,6 +1951,8 @@ continuebtn.addEventListener("click", function () {
     currentQuestionIndex = 0
     score = 0
     scoreSpan.textContent = score
+    totalQuestionsSpan.textContent = quizQuestions.length; // Total Questions In Quiz
+    maxScoreSpan.textContent = quizQuestions.length;
     optionscreen.classList.remove("active");
     quizScreen.classList.add("active")
     showquestion()
@@ -2048,7 +2050,7 @@ restartButton.addEventListener("click", function restart() {
     resultScreen.classList.remove("active");
 
     startscreen.classList.add("active");
-   totalQuestionsSpan.textContent = quizQuestions.length; 
+    totalQuestionsSpan.textContent = quizQuestions.length;
   }
 })
 
