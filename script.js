@@ -173,95 +173,95 @@ const social = [
     ],
   },
   {
-  Question: "Which state is known as the 'Spice Garden of India'?",
-  Answer: [
-    { text: "Kerala", correct: true },
-    { text: "Punjab", correct: false },
-    { text: "Rajasthan", correct: false },
-    { text: "Bihar", correct: false },
-  ],
-},
-{
-  Question: "Which freedom fighter gave the slogan 'Give me blood, and I shall give you freedom'?",
-  Answer: [
-    { text: "Mahatma Gandhi", correct: false },
-    { text: "Bhagat Singh", correct: false },
-    { text: "Subhash Chandra Bose", correct: true },
-    { text: "Sardar Patel", correct: false },
-  ],
-},
-{
-  Question: "Which is the largest ocean in the world?",
-  Answer: [
-    { text: "Indian Ocean", correct: false },
-    { text: "Pacific Ocean", correct: true },
-    { text: "Atlantic Ocean", correct: false },
-    { text: "Arctic Ocean", correct: false },
-  ],
-},
-{
-  Question: "Which country is known as the Land of the Rising Sun?",
-  Answer: [
-    { text: "China", correct: false },
-    { text: "Thailand", correct: false },
-    { text: "Japan", correct: true },
-    { text: "Korea", correct: false },
-  ],
-},
-{
-  Question: "How many states are there in India?",
-  Answer: [
-    { text: "25", correct: false },
-    { text: "28", correct: true },
-    { text: "30", correct: false },
-    { text: "29", correct: false },
-  ],
-},
-{
-  Question: "Which planet is known as the Red Planet?",
-  Answer: [
-    { text: "Venus", correct: false },
-    { text: "Mars", correct: true },
-    { text: "Jupiter", correct: false },
-    { text: "Saturn", correct: false },
-  ],
-},
-{
-  Question: "Which festival is known as the Festival of Lights?",
-  Answer: [
-    { text: "Holi", correct: false },
-    { text: "Eid", correct: false },
-    { text: "Diwali", correct: true },
-    { text: "Christmas", correct: false },
-  ],
-},
-{
-  Question: "Who was the first Prime Minister of India?",
-  Answer: [
-    { text: "Indira Gandhi", correct: false },
-    { text: "Jawaharlal Nehru", correct: true },
-    { text: "Rajiv Gandhi", correct: false },
-    { text: "Lal Bahadur Shastri", correct: false },
-  ],
-},
-{
-  Question: "Which is the smallest continent in the world?",
-  Answer: [
-    { text: "Europe", correct: false },
-    { text: "Australia", correct: true },
-    { text: "Antarctica", correct: false },
-    { text: "South America", correct: false },
-  ],
-},
-{
-  Question: "Which Indian city is known as the Pink City?",
-  Answer: [
-    { text: "Jaipur", correct: true },
-    { text: "Udaipur", correct: false },
-    { text: "Jodhpur", correct: false },
-    { text: "Bhopal", correct: false },
-  ],
-}
+    Question: "Which state is known as the 'Spice Garden of India'?",
+    Answer: [
+      { text: "Kerala", correct: true },
+      { text: "Punjab", correct: false },
+      { text: "Rajasthan", correct: false },
+      { text: "Bihar", correct: false },
+    ],
+  },
+  {
+    Question: "Which freedom fighter gave the slogan 'Give me blood, and I shall give you freedom'?",
+    Answer: [
+      { text: "Mahatma Gandhi", correct: false },
+      { text: "Bhagat Singh", correct: false },
+      { text: "Subhash Chandra Bose", correct: true },
+      { text: "Sardar Patel", correct: false },
+    ],
+  },
+  {
+    Question: "Which is the largest ocean in the world?",
+    Answer: [
+      { text: "Indian Ocean", correct: false },
+      { text: "Pacific Ocean", correct: true },
+      { text: "Atlantic Ocean", correct: false },
+      { text: "Arctic Ocean", correct: false },
+    ],
+  },
+  {
+    Question: "Which country is known as the Land of the Rising Sun?",
+    Answer: [
+      { text: "China", correct: false },
+      { text: "Thailand", correct: false },
+      { text: "Japan", correct: true },
+      { text: "Korea", correct: false },
+    ],
+  },
+  {
+    Question: "How many states are there in India?",
+    Answer: [
+      { text: "25", correct: false },
+      { text: "28", correct: true },
+      { text: "30", correct: false },
+      { text: "29", correct: false },
+    ],
+  },
+  {
+    Question: "Which planet is known as the Red Planet?",
+    Answer: [
+      { text: "Venus", correct: false },
+      { text: "Mars", correct: true },
+      { text: "Jupiter", correct: false },
+      { text: "Saturn", correct: false },
+    ],
+  },
+  {
+    Question: "Which festival is known as the Festival of Lights?",
+    Answer: [
+      { text: "Holi", correct: false },
+      { text: "Eid", correct: false },
+      { text: "Diwali", correct: true },
+      { text: "Christmas", correct: false },
+    ],
+  },
+  {
+    Question: "Who was the first Prime Minister of India?",
+    Answer: [
+      { text: "Indira Gandhi", correct: false },
+      { text: "Jawaharlal Nehru", correct: true },
+      { text: "Rajiv Gandhi", correct: false },
+      { text: "Lal Bahadur Shastri", correct: false },
+    ],
+  },
+  {
+    Question: "Which is the smallest continent in the world?",
+    Answer: [
+      { text: "Europe", correct: false },
+      { text: "Australia", correct: true },
+      { text: "Antarctica", correct: false },
+      { text: "South America", correct: false },
+    ],
+  },
+  {
+    Question: "Which Indian city is known as the Pink City?",
+    Answer: [
+      { text: "Jaipur", correct: true },
+      { text: "Udaipur", correct: false },
+      { text: "Jodhpur", correct: false },
+      { text: "Bhopal", correct: false },
+    ],
+  }
 
 ];
 
@@ -2048,6 +2048,8 @@ restartButton.addEventListener("click", function restart() {
     resultScreen.classList.remove("active");
 
     startscreen.classList.add("active");
+    currentQuestionIndex = 0
+    score = 0;
   }
 })
 
@@ -2059,8 +2061,8 @@ Droplist.addEventListener("change", function (event) {
 
   const Topic = event.target.value;
   if (!Topic) return
-  let RandomQuestion  = allQuestions[Topic];
-  QuizQuestion = getRandomQuestions(RandomQuestion , 10);
+  let RandomQuestion = allQuestions[Topic];
+  QuizQuestion = getRandomQuestions(RandomQuestion, 10);
   currentQuestionIndex = 0
   score = 0;
 
@@ -2154,6 +2156,6 @@ function showquestions() {
   })
 }
 
-darkmode.addEventListener("click" , () => {
-  document.body.classList.toggle("dark") 
+darkmode.addEventListener("click", () => {
+  document.body.classList.toggle("dark")
 })
