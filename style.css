@@ -187,6 +187,10 @@ button:hover{
     cursor: pointer;
 }
 
+.dark #dark-mode{
+    color: #ffff;
+}
+
  /* Media Query  */
 
 @media (max-width : 500px) {
