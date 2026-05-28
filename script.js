@@ -1968,7 +1968,7 @@ function showquestion() {
 
   const currentQuestion = quizQuestions[currentQuestionIndex] // quizQuestion [0]; current question which start with 0 because quizQuestions is an array of Objects .
 
-  currentQuestionSpan.textContent = currentQuestionIndex + 1 // Current Questions start with 1 bocause 0+1 = 1
+  currentQuestionSpan.textContent = currentQuestionIndex + 1 // Current Questions start with 1 because 0+1 = 1
 
   const progressPersent = (currentQuestionIndex / quizQuestions.length) * 100; // (1/5)*100
   progressBar.style.width = progressPersent + "%" // it add ProgressPersent %
